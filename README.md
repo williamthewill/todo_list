@@ -16,7 +16,7 @@ To start your Phoenix server:
         Otherwise of postgres instalation is run `docker-compose up -d database`, you need have docker-compose and docker up in you machine, to install docker-compose read this article https://docs.docker.com/compose/install/
 
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-    ![alt text](./project_version.png)
+    ![alt text](./how_to_use/project_version.png)
     Do you have pay attention in project version and elixir version running in you machine
     it's possible change the project version to higher, `1.14` for example.
 
@@ -46,3 +46,7 @@ After project is running and you access it on your browser, this is how to inter
 
 - To complete an todo only click on checkbox from the side of input description, this way:
 ![alt text](./how_to_use/complete_todo.gif)
+
+
+* Run tests with `mix test`
+  It is necessary have your postgres running
