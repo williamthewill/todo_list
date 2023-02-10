@@ -118,3 +118,15 @@
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+input[type="text"].todo-description {
+  width: 70%;
+}
+
+input[checked="true"].todo-description {
+  text-decoration: line-through;
+}
+
+.button, button, dd, dt, li {
+  list-style-type: none;
+}

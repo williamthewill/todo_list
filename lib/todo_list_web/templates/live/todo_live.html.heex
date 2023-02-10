@@ -1,0 +1,13 @@
+<h1>TODO's</h1>
+<ul>
+    <%= for todo <- @todos do %>
+        <li todo-id={todo.id}>
+        <%= if todo.checked? do %>
+            <input type="checkbox" todo-id={todo.id} phx-click="toogle_checked" phx-value-id={todo.id} checked>
+        <% else %>
+            <input type="checkbox" todo-id={todo.id} phx-click="toogle_checked" phx-value-id={todo.id}>
+        <% end %>
+        <input type="text" class="todo-description" checked={"#{todo.checked?}"} todo-id={todo.id} id={"#{todo.description}_#{todo.id}"} phx-hook="ManipuleTodoList" value={todo.description}/>
+        </li>
+    <% end %>
+</ul>

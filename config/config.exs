@@ -10,6 +10,15 @@ import Config
 config :todo_list,
   ecto_repos: [TodoList.Repo]
 
+config :todo_list, TodoList.Repo,
+  migration_primary_key: [
+    name: :id,
+    type: :binary_id,
+    autogenerate: true,
+    read_after_writes: true,
+    default: {:fragment, "gen_random_uuid()"}
+  ]
+
 # Configures the endpoint
 config :todo_list, TodoListWeb.Endpoint,
   url: [host: "localhost"],

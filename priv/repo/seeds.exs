@@ -9,3 +9,14 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias TodoList.Repo
+alias TodoList.Todo
+
+Repo.insert!(
+  %Todo{
+    description: "Tarefa",
+    index: 0
+  },
+  on_conflict: :nothing
+)
