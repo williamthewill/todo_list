@@ -50,3 +50,5 @@ After project is running and you access it on your browser, this is how to inter
 
 * Run tests with `mix test`
   It is necessary have your postgres running
+  
+  teste linear connect
